@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <div class="heading">
+                <h1>Login</h1>
+            </div>
+            <div class="input-controls">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" placeholder="Email" id="email">
+            </div>
+            <div class="input-controls">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" placeholder="Password" id="password">
+            </div>
+            <button type="submit">Login</button>
+            <p>Don't have an account! <a href="#">Register Now</a></p>
+        
+        <h3>OR</h3>
+        <p class="text">Login with</p>
+        <div class="social-media">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-google"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+    </form>
+    </div>
+    <script>
+        const emailEl = document.getElementById('email').value;
+        const passwordEl = document.getElementById('password').value;
+
+        document.querySelector('button').addEventListener('click', (e) => {
+            e.preventDefault();
+            // if(emailEl.includes('@')){
+            //     window.alert('Invalid Email')
+            // }
+            // if(passwordEl.length < 8){
+            //     window.alert('invalid password')
+            // }
+
+        })
+    </script>
+</body>
+</html>
